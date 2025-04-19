@@ -1,0 +1,109 @@
+body {
+    font-family: "Grandstander";
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* icon quả ngôi nhà */
+.logo {
+    text-decoration: none;
+    width: 64px;
+}
+
+/* tiêu đề */
+.header {
+    display: flex;
+    background-color: #d3fdcb;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+/* thanh menu */
+.menu {
+    display: flex;
+    margin: 0;
+}
+
+/* các đề mục */
+.menu li {
+    display: block;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    font-size: 20px;
+}
+
+.fas {
+    margin: 0 8px;
+    padding-left: 32px;
+    font-size: 24px;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    background: rgba(102, 102, 102, 0.199);
+    border-radius: 5px;
+}
+
+.fans {
+    grid-template-columns: repeat(4, 200px);
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    font-family: "Phudu";
+}
+.fan {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 180px;
+    background-color: #f9f9f9;
+}
+.fan img {
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+.fan-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fan-details {
+    font-family: Exo;
+}
+
+button {
+    font-family: Baloo;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #80d7ff77;
+    transition: all 0.2s ease-in-out;
+}

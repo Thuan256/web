@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trường THPT Lương Tài</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: "Segoe UI", sans-serif;
+                background-color: #f0f4f8;
+                color: #333;
+            }
+
+            header {
+                background-color: #004488;
+                padding: 1rem;
+                text-align: center;
+                color: white;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            header h1 {
+                margin: 0.5rem 0;
+                font-size: 1.8rem;
+            }
+
+            nav {
+                margin-top: 0.5rem;
+            }
+
+            nav a {
+                color: white;
+                margin: 0 1rem;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+
+            nav a:hover {
+                color: #ffcc00;
+            }
+
+            section {
+                max-width: 960px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+
+            h2 {
+                text-align: center;
+                color: #004488;
+                margin-bottom: 1rem;
+            }
+
+            .intro-box {
+                background: white;
+                padding: 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .info-block {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 2rem 0;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .info-block img {
+                width: 200px;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .info-text {
+                flex: 1;
+                padding: 1rem 1.5rem;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .gallery img:hover {
+                transform: scale(1.03);
+            }
+
+            footer {
+                background-color: #004488;
+                color: white;
+                text-align: center;
+                padding: 1.5rem 1rem;
+                margin-top: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Trường THPT Lương Tài</h1>
+            <nav>
+                <a href="#gioithieu">Giới thiệu</a>
+                <a href="#hoatdong">Hoạt động</a>
+                <a href="#thuvien">Thư viện</a>
+                <a href="#lienhe">Liên hệ</a>
+            </nav>
+        </header>
+
+        <section id="gioithieu">
+            <h2>Giới thiệu chung</h2>
+            <div class="intro-box">
+                <p>
+                    <strong>Trường THPT Lương Tài</strong> là một trong những ngôi trường có truyền thống lâu đời tại
+                    Bắc Ninh. Với đội ngũ giáo viên tâm huyết, chương trình học chất lượng, và không gian học tập hiện
+                    đại, nhà trường luôn là lựa chọn hàng đầu của học sinh và phụ huynh.
+                </p>
+            </div>
+        </section>
+
+        <section id="hoatdong">
+            <h2>Thông tin nổi bật</h2>
+
+            <div class="info-block">
+                <img src="https://i.postimg.cc/FKWRKXkM/lop-hoc-1.jpg" alt="Môi trường học tập" />
+                <div class="info-text">
+                    <h3>Môi trường học tập thân thiện</h3>
+                    <p>
+                        Nhà trường luôn chú trọng xây dựng một môi trường học tập tích cực, thân thiện và tôn trọng lẫn
+                        nhau. Giáo viên gần gũi, học sinh hòa đồng, tạo nên không khí học tập hiệu quả và đầy cảm hứng.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <img src="https://i.postimg.cc/8sQgCtHQ/hoat-dong-ngoai-khoa.jpg" alt="Hoạt động ngoại khóa" />
+                <div class="info-text">
+                    <h3>Hoạt động ngoại khóa sôi nổi</h3>
+                    <p>
+                        Các CLB nghệ thuật, thể thao, học thuật cùng các hoạt động thiện nguyện, trải nghiệm sáng tạo
+                        giúp học sinh phát triển toàn diện về kỹ năng và nhân cách.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <img src="https://i.postimg.cc/26yD9q6J/hoc-sinh-gioi.jpg" alt="Thành tích học tập" />
+                <div class="info-text">
+                    <h3>Thành tích đáng tự hào</h3>
+                    <p>
+                        Hàng năm, học sinh nhà trường đạt nhiều giải cao trong kỳ thi học sinh giỏi cấp tỉnh, quốc gia,
+                        và có tỉ lệ đỗ đại học top đầu trong khu vực.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="thuvien">
+            <h2>Thư viện hình ảnh</h2>
+            <div class="gallery">
+                <img src="https://i.postimg.cc/QtvdpgbS/lop-hoc-2.jpg" alt="ảnh 1" />
+                <img src="https://i.postimg.cc/FHxz2Lrs/khai-giang-2.jpg" alt="ảnh 2" />
+                <img src="https://i.postimg.cc/FKWRKXkM/lop-hoc-1.jpg" alt="ảnh 3" />
+                <img src="https://i.postimg.cc/8sQgCtHQ/hoat-dong-ngoai-khoa.jpg" alt="ảnh 4" />
+                <img src="https://i.postimg.cc/cJsZYkNd/danh-trong.jpg" alt="ảnh 5" />
+                <img src="https://i.postimg.cc/hjXGzZ9f/bong-chuyen.jpg" alt="ảnh 6" />
+            </div>
+        </section>
+
+        <section id="lienhe">
+            <h2>Liên hệ</h2>
+            <div class="intro-box">
+                <p><strong>Địa chỉ:</strong> Thị trấn Thứa, Huyện Lương Tài, tỉnh Bắc Ninh</p>
+                <p><strong>Số điện thoại:</strong> (0222) 3867 255</p>
+                <p><strong>Email:</strong> c3luongtai@bacninh.edu.vn</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Trường THPT Lương Tài</p>
+        </footer>
+    </body>
+</html>

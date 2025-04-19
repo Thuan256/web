@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>THPT Lương Tài</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Segoe UI", sans-serif;
+            }
+            body {
+                background: #f8f9fa;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            header {
+                background: #2c3e50;
+                color: white;
+                padding: 1.5rem 0;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .logo {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .slogan {
+                font-style: italic;
+                opacity: 0.9;
+            }
+
+            nav {
+                background: #34495e;
+                padding: 1rem;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
+            nav ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+            nav li {
+                margin: 0 1rem;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem;
+                transition: all 0.3s;
+            }
+            nav a:hover {
+                color: #f1c40f;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+            section {
+                background: white;
+                border-radius: 8px;
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            }
+            h2 {
+                color: #2c3e50;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #f1c40f;
+                padding-bottom: 0.5rem;
+            }
+
+            .about-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+                margin-top: 1rem;
+            }
+            .about-img {
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .about-img img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .highlights {
+                margin-top: 1rem;
+            }
+            .highlight-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px dashed #eee;
+            }
+            .highlight-icon {
+                font-size: 1.8rem;
+                color: #f1c40f;
+                margin-right: 1rem;
+                min-width: 40px;
+                text-align: center;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .gallery img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                transition: transform 0.3s;
+            }
+            .gallery img:hover {
+                transform: scale(1.05);
+            }
+
+            footer {
+                background: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 1.5rem;
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Trường THPT LƯƠNG TÀI</div>
+            <p class="slogan">Nơi ươm mầm tri thức</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#highlights">Nổi bật</a></li>
+                <li><a href="#gallery">Hình ảnh</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <section id="about">
+                <h2>Về chúng tôi</h2>
+                <div class="about-grid">
+                    <div>
+                        <p>
+                            Trường THPT Lương Tài thành lập năm 1953, là một trong những trường chất lượng cao của địa
+                            phương với bề dày thành tích trong giảng dạy và học tập.
+                        </p>
+                        <p>
+                            Với đội ngũ giáo viên giàu kinh nghiệm, cơ sở vật chất hiện đại, chúng tôi cam kết mang đến
+                            môi trường học tập tốt nhất cho học sinh.
+                        </p>
+                    </div>
+                    <div class="about-img">
+                        <img
+                            src="https://i.postimg.cc/Y0Xy981Q/khai-giang-4.jpg"
+                            alt="Trường THPT Lương Tài"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="highlights">
+                <h2>Điểm nổi bật</h2>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🏆</div>
+                        <div>
+                            <h3>Thành tích</h3>
+                            <p>100% tốt nghiệp THPT, nhiều học sinh giỏi cấp tỉnh, quốc gia</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">👩‍🏫</div>
+                        <div>
+                            <h3>Giáo viên</h3>
+                            <p>Đội ngũ giáo viên trình độ cao, tận tâm với nghề</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🏫</div>
+                        <div>
+                            <h3>Cơ sở vật chất</h3>
+                            <p>Phòng học hiện đại, thư viện, phòng thí nghiệm đầy đủ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery">
+                <h2>Hình ảnh</h2>
+                <div class="gallery">
+                    <img src="https://i.postimg.cc/QtvdpgbS/lop-hoc-2.jpg" alt="Lớp học" />
+                    <img src="https://i.postimg.cc/BnRd9qcs/thu-vien.jpg" alt="Thư viện" />
+                    <img src="https://i.postimg.cc/QNksQWg7/bong-chuyen-2.jpg" alt="Sân trường" />
+                    <img src="https://i.postimg.cc/sXrqxwNN/tu-van-tuyen-sinh.jpg" alt="Hoạt động" />
+                    <img src="https://i.postimg.cc/4xngRLDv/bong-chuyen.jpg" alt="Hoạt động" />
+                    <img src="https://i.postimg.cc/Kjm6qJ7M/hoat-dong-ngoai-khoa.jpg" alt="Hoạt động" />
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Liên hệ</h2>
+                <p><strong>Địa chỉ:</strong> Thị Trấn Thứa, Huyện Lương Tài, Tỉnh Bắc Ninh</p>
+                <p><strong>Điện thoại:</strong> (0222) 3867 255</p>
+                <p><strong>Email:</strong> c3luongtai@bacninh.edu.vn</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Trường THPT Lương Tài</p>
+        </footer>
+    </body>
+</html>

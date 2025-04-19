@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Exo";
+}
+
+/* icon quả bóng */
+.icon {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* tiêu đề */
+.header {
+    display: flex;
+    background-color: rgb(34, 165, 34);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+/* thanh menu */
+.menu {
+    display: flex;
+    margin: 0;
+    font-family: "Phudu";
+}
+
+/* các đề mục */
+.menu li {
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.226);
+    border-radius: 5px;
+}
+
+/* Layout chính */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Cột bài viết */
+.articles {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Bài báo lớn */
+.article-large {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ảnh lớn */
+.article-large img {
+    width: 50%;
+    border-radius: 5px;
+}
+/* Nội dung bài báo lớn */
+.article-large .content {
+    padding: 0 15px;
+    flex: 1;
+}
+
+/* Tiêu đề bài báo lớn */
+.article-large h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Bài báo nhỏ */
+.article-small {
+    display: flex;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bài báo nhỏ */
+.article-small img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+/* Nội dung bài báo nhỏ */
+.article-small .content {
+    padding: 0 10px;
+    flex: 1;
+}
+
+/* Tiêu đề bài báo nhỏ */
+.article-small h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Cột trận đấu gần đây */
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Trận đâus */
+.match {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.match span {
+    font-weight: bold;
+}
+/* Tên đội */
+.team {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo đội */
+
+.team img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Tỷ số */
+.score {
+    font-weight: bold;
+}

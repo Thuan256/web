@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>THPT Lương Tài - Trường học của tương lai</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+        <style>
+            :root {
+                --primary: #1b5e20;
+                --accent: #00c853;
+                --bg: #e8f5e9;
+                --white: #ffffff;
+                --text: #263238;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+
+            body {
+                display: flex;
+                font-family: "Segoe UI", sans-serif;
+                background: var(--bg);
+                color: var(--text);
+            }
+
+            aside {
+                position: fixed;
+                width: 80px;
+                background: var(--primary);
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+                gap: 2rem;
+                z-index: 999;
+            }
+
+            aside a {
+                color: white;
+                font-size: 1.5rem;
+                text-decoration: none;
+                transition: transform 0.2s;
+            }
+
+            aside a:hover {
+                transform: scale(1.2);
+            }
+
+            main {
+                margin-left: 80px;
+                flex-grow: 1;
+                padding: 2rem;
+                max-width: 1200px;
+                margin-right: auto;
+            }
+
+            header {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+                color: var(--primary);
+            }
+
+            header p {
+                font-size: 1.1rem;
+                color: #555;
+            }
+
+            section {
+                background: var(--white);
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            }
+
+            section h2 {
+                color: var(--primary);
+                margin-bottom: 1rem;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.2rem;
+            }
+
+            .grid img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 6px;
+            }
+
+            .info-list li {
+                margin-bottom: 0.5rem;
+            }
+
+            .links a {
+                display: inline-block;
+                margin: 0.5rem 1rem 0.5rem 0;
+                background: var(--accent);
+                color: white;
+                padding: 0.6rem 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+
+            .highlights ul {
+                list-style: none;
+                padding-left: 1rem;
+            }
+
+            .highlights li::before {
+                content: "✔";
+                color: var(--accent);
+                margin-right: 0.5rem;
+            }
+
+            footer {
+                text-align: center;
+                padding: 2rem;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <aside>
+            <a href="#gioi-thieu" title="Giới thiệu"><i class="fas fa-school"></i></a>
+            <a href="#lich-su" title="Lịch sử"><i class="fas fa-history"></i></a>
+            <a href="#co-so" title="Cơ sở vật chất"><i class="fas fa-building"></i></a>
+            <a href="#hoat-dong" title="Hoạt động"><i class="fas fa-users"></i></a>
+            <a href="#diem-nhan" title="Điểm nổi bật"><i class="fas fa-star"></i></a>
+            <a href="#lien-ket" title="Liên kết"><i class="fas fa-link"></i></a>
+        </aside>
+
+        <main>
+            <header>
+                <h1>Trường THPT Lương Tài</h1>
+            </header>
+
+            <section id="gioi-thieu">
+                <h2>Giới thiệu chung</h2>
+                <p>
+                    Trường THPT Lương Tài là nơi nuôi dưỡng ước mơ và phát triển tài năng, với môi trường học tập hiện
+                    đại, thân thiện và năng động, giúp học sinh phát triển toàn diện.
+                </p>
+            </section>
+
+            <section id="lich-su">
+                <h2>Lịch sử hình thành</h2>
+                <p>
+                    Trường THPT Lương Tài được thành lập vào năm 1953, tiền thân là Trường cấp II Gia Lương do thầy Phạm
+                    Huy San làm Hiệu trưởng. Qua nhiều năm thay đổi địa điểm và cơ sở vật chất. Hiện nay trường là một
+                    trong những ngôi trường có cơ sở vật chất và chất lượng dạy học hàng đầu tỉnh
+                </p>
+            </section>
+
+            <section id="co-so">
+                <h2>Cơ sở vật chất</h2>
+                <ul class="info-list">
+                    <li>Phòng học hiện đại, trang bị điều hòa và máy chiếu</li>
+                    <li>Thư viện điện tử với hàng ngàn đầu sách và máy tính tra cứu</li>
+                    <li>Phòng thực hành khoa học đạt chuẩn</li>
+                    <li>Khu thể thao đa năng phục vụ các hoạt động ngoại khóa</li>
+                    <li>Sân trường rộng, cây xanh thoáng mát</li>
+                </ul>
+            </section>
+
+            <section id="hoat-dong">
+                <h2>Hoạt động nổi bật</h2>
+                <div class="grid">
+                    <img src="https://i.postimg.cc/28hV7tgW/khai-giang-1.jpg" alt="Hoạt động 1" />
+                    <img src="https://i.postimg.cc/76RyFxJL/hoitrai.jpg" alt="Hoạt động 2" />
+                    <img src="https://i.postimg.cc/hjXGzZ9f/bong-chuyen.jpg" alt="Hoạt động 3" />
+                </div>
+            </section>
+
+            <section id="diem-nhan">
+                <h2>Điểm nổi bật</h2>
+                <div class="highlights">
+                    <ul>
+                        <li>Đội ngũ giáo viên tâm huyết, trình độ cao</li>
+                        <li>Học sinh đạt nhiều thành tích cấp tỉnh và quốc gia</li>
+                        <li>Hợp tác với nhiều trường đại học và tổ chức giáo dục</li>
+                        <li>Hoạt động ngoại khóa sôi nổi, sáng tạo</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="lien-ket">
+                <h2>Liên kết hữu ích</h2>
+                <div class="links">
+                    <a href="https://www.facebook.com/thptluongtai" target="_blank"
+                        ><i class="fab fa-facebook"></i> Fanpage Trường</a
+                    >
+                    <a href="https://www.facebook.com/LuongTaiConfessions" target="_blank"
+                        ><i class="fas fa-comment-dots"></i> Confession</a
+                    >
+                    <a href="https://thptluongtai.bacninh.edu.vn/" target="_blank"
+                        ><i class="fas fa-globe"></i> Website Chính Thức</a
+                    >
+                </div>
+            </section>
+
+            <footer>&copy; 2025 Trường THPT Lương Tài</footer>
+        </main>
+    </body>
+</html>

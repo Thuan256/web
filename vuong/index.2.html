@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trường THPT Lương Tài</title>
+        <style>
+            body {
+                font-family: "Segoe UI", sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #6b48ff, #00ddeb);
+                color: #333;
+            }
+            .sidebar {
+                width: 200px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            }
+            .sidebar a {
+                display: block;
+                color: #333;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s;
+            }
+            .sidebar a:hover {
+                color: #6b48ff;
+            }
+            .main {
+                margin-left: 220px;
+                padding: 20px;
+            }
+            .header {
+                background: url("https://thptluongtai.bacninh.edu.vn/upload/63117/20190331/bgbanner_moi1.png") no-repeat
+                    center;
+                background-size: contain;
+                color: white;
+                text-align: center;
+                padding: 100px 20px;
+                border-radius: 10px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .content {
+                background: white;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            .gallery img {
+                width: 250px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+                transition: transform 0.3s;
+            }
+            .gallery img:hover {
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Tra cứu</a>
+            <a href="#tuyensinh">Tuyển sinh</a>
+            <a href="#anh">Ảnh</a>
+            <a href="#contact">Liên hệ</a>
+        </div>
+
+        <div class="main">
+            <div class="header"></div>
+
+            <div class="content">
+                <h2>Giới thiệu</h2>
+                <p>
+                    Trường THPT Lương Tài được thành lập vào năm 1953, tiền thân là Trường cấp II Gia Lương do thầy Phạm
+                    Huy San làm Hiệu trưởng. Qua nhiều năm thay đổi địa điểm và cơ sở vật chất. Hiện nay trường là một
+                    trong những ngôi trường có cơ sở vật chất và chất lượng dạy học hàng đầu tỉnh.
+                </p>
+            </div>
+
+            <div class="content">
+                <h2>Thư viện ảnh</h2>
+                <div class="gallery">
+                    <img
+                        src="https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/480445622_1052878743534733_6518971283758575223_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=4nwqOOXzX6UQ7kNvgEn3nkY&_nc_oc=AdnPcziNyZoCilwuUI7qNeDVNCOWKLsOgAmLqg_qdHQFSFb95aoyqpPycmhjFDCOfaUmV1FmW1-aM2U4geUei2G6&_nc_zt=23&_nc_ht=scontent.fhan4-3.fna&_nc_gid=aerO2_I2lTcpypYbaPS_ag&oh=00_AYGN0MJ6U9Vc6Q9PW859SyRfg4mT84EMtJfUd1Hjty5Etg&oe=67F38F62"
+                        alt=""
+                    />
+                    <img
+                        src="https://scontent.fhan3-5.fna.fbcdn.net/v/t39.30808-6/484297921_1075930037896270_4436383214032192032_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=N9tvWY2vJ7IQ7kNvgFt23md&_nc_oc=Adnow_dueh_VpUqXlV9IrsqErdTDhNNdICuEYco0X_YrhdIZUItGE4t94Ht7Wg9QhLTit5QjlXbX9jDCZZK1GRp_&_nc_zt=23&_nc_ht=scontent.fhan3-5.fna&_nc_gid=w_rfMEOgbzIe0Fdpu2RvMQ&oh=00_AYGr9vxM4RCKmQ2agtsn0Qo0zFq9xhU1MiccQ1fIBbhBKA&oe=67F3AC31"
+                        alt=""
+                    />
+                    <img
+                        src="https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/484343576_1075918341230773_150296106490253019_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GXrGqcLqExUQ7kNvgGDf-mj&_nc_oc=AdmjYmFFaEG9qXOcueYVBfNytDFDwfq0In7Ab9X-Gfgs0-OKH2fyooC2w2V2u6MkXXz6qeo7BFPY9WvH7wSsuiBi&_nc_zt=23&_nc_ht=scontent.fhan3-4.fna&_nc_gid=7kUMiBk7rLOJUZzDq9bJxQ&oh=00_AYGB_Y-j4RicgyZN5aId4E6Q7T1FntGUmEaQLc0WywD1eA&oe=67F38EF9"
+                        alt=""
+                    />
+                    <img
+                        src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/482249566_1071743444981596_7841778542339963272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NrW0zgO0mVQQ7kNvgEL6WCa&_nc_oc=AdnNq3cq5AOZQJoFFF-7Vub-9urGBGHe80TvWzb2WDPlGriRyqTqgBpp-ItSYt7KZ8MHlkafSG2NCLokyzJeEUyl&_nc_zt=23&_nc_ht=scontent.fhan3-2.fna&_nc_gid=_lISPskN-s8Sh4Lv62MQVg&oh=00_AYEcIk6NRs5swSSveKUrtUeK8E6hYQsUKfMMRVNQhzR8vA&oe=67F3B8D7"
+                    />
+                </div>
+            </div>
+
+            <div class="content">
+                <h2>Liên hệ</h2>
+                <p>Email: c3luongtai@bacninh.edu.vn</p>
+                <p>Điện thoại: (0222) 3867 255</p>
+                <p>Địa chỉ: Thị trấn Thứa, Huyện Lương Tài, tỉnh Bắc Ninh</p>
+            </div>
+        </div>
+    </body>
+</html>

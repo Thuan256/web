@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>THPT Lương Tài</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Arial", sans-serif;
+            }
+            body {
+                background: #f5f5f5;
+                color: #333;
+                line-height: 1.6;
+            }
+            header {
+                background: #ffb24d;
+                color: white;
+                padding: 1rem;
+                text-align: center;
+            }
+            nav {
+                background: #fd5ec0;
+                padding: 0.5rem;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 1rem;
+                padding: 0.5rem;
+            }
+            nav a:hover {
+                color: #f1c40f;
+            }
+            .main {
+                max-width: 1000px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+            .hero {
+                background: #3498db;
+                color: white;
+                padding: 2rem;
+                border-radius: 8px;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .features {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+            .feature {
+                background: white;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            .feature-icon {
+                font-size: 2rem;
+                color: #e74c3c;
+                margin-bottom: 1rem;
+            }
+            .about {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+            .about-img {
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .about-img img {
+                width: 100%;
+                height: auto;
+            }
+            footer {
+                background: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 1.5rem;
+                margin-top: 2rem;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>THPT LƯƠNG TÀI</h1>
+            <p>Nơi chắp cánh ước mơ</p>
+        </header>
+
+        <nav>
+            <a href="#about">Giới thiệu</a>
+            <a href="#features">Thế mạnh</a>
+            <a href="#news">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="main">
+            <div class="hero">
+                <h2>Chào mừng đến với THPT Lương Tài</h2>
+                <p>Trường học chất lượng cao với hơn 30 năm kinh nghiệm đào tạo</p>
+            </div>
+
+            <div id="features" class="features">
+                <div class="feature">
+                    <div class="feature-icon">🏫</div>
+                    <h3>Giáo viên giỏi</h3>
+                    <p>Đội ngũ giáo viên tận tâm, giàu kinh nghiệm</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>Cơ sở hiện đại</h3>
+                    <p>Phòng học, thư viện, phòng thí nghiệm đầy đủ</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Thành tích cao</h3>
+                    <p>Nhiều học sinh giỏi cấp tỉnh, quốc gia</p>
+                </div>
+            </div>
+
+            <div id="about" class="about">
+                <div>
+                    <h2>Về trường chúng tôi</h2>
+                    <p>
+                        THPT Lương Tài thành lập năm 1990, là trường chất lượng cao của tỉnh. Chúng tôi tự hào với bề
+                        dày thành tích trong giảng dạy và học tập.
+                    </p>
+                    <p>Phương châm: "Tất cả vì học sinh thân yêu", luôn nỗ lực tạo môi trường học tập tốt nhất.</p>
+                </div>
+                <div class="about-img">
+                    <img src="https://via.placeholder.com/500x300" alt="Trường THPT Lương Tài" />
+                </div>
+            </div>
+        </div>
+
+        <footer id="contact">
+            <h3>THPT Lương Tài</h3>
+            <p>Địa chỉ: Số 123, đường Lương Tài, Bắc Ninh</p>
+            <p>Điện thoại: 0222.xxx.xxx | Email: thptluongtai@edu.vn</p>
+            <p>© 2023 - Bản quyền thuộc về nhà trường</p>
+        </footer>
+    </body>
+</html>
