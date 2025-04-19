@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>THPT Lương Tài - Bắc Ninh</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Arial", sans-serif;
+            }
+
+            body {
+                background-color: #f9f5f0;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            header {
+                background: linear-gradient(135deg, #8e44ad, #9b59b6);
+                color: white;
+                padding: 1.5rem 0;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            nav {
+                background-color: #34495e;
+                padding: 0.8rem 0;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+            }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+
+            nav ul li a {
+                color: #ecf0f1;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+            }
+
+            nav ul li a:hover {
+                background-color: #7f8c8d;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+
+            .section {
+                margin-bottom: 2.5rem;
+                padding: 1.5rem;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .section h2 {
+                color: #8e44ad;
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid #f1c40f;
+            }
+
+            .intro {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .intro img {
+                width: 300px;
+                border-radius: 8px;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .intro-text {
+                flex: 1;
+            }
+
+            .history-item {
+                margin-bottom: 1.5rem;
+            }
+
+            .history-item h3 {
+                color: #e74c3c;
+                margin-bottom: 0.5rem;
+            }
+
+            .activities {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .activity {
+                background-color: #f8f9fa;
+                padding: 1rem;
+                border-radius: 6px;
+                border-left: 4px solid #f1c40f;
+            }
+
+            .activity h3 {
+                color: #2c3e50;
+                margin-bottom: 0.5rem;
+            }
+
+            .contact-info {
+                background-color: #34495e;
+                color: white;
+                padding: 1.5rem;
+                border-radius: 8px;
+            }
+
+            .contact-info p {
+                margin-bottom: 0.8rem;
+            }
+
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 1.5rem 0;
+                margin-top: 2rem;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .gallery img {
+                object-fit: cover;
+                height: 250px;
+                width: 100%;
+                border-radius: 6px;
+                transition: transform 0.3s;
+            }
+
+            .gallery img:hover {
+                transform: scale(1.03);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>TRƯỜNG THPT LƯƠNG TÀI</h1>
+            <p>Nơi ươm mầm tri thức - Chắp cánh ước mơ</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="#lich-su">Lịch sử</a></li>
+                <li><a href="#hoat-dong">Hoạt động</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <section id="gioi-thieu" class="section">
+                <h2>Giới thiệu về trường</h2>
+                <div class="intro">
+                    <img src="https://i.postimg.cc/mgVWK27t/khai-giang-5.jpg" alt="Trường THPT Lương Tài" />
+                    <div class="intro-text">
+                        <p>
+                            Trường THPT Lương Tài được thành lập năm 1953, là một trong những trường trung học phổ thông
+                            lâu đời và có bề dày thành tích tại tỉnh Bắc Ninh.
+                        </p>
+                        <p>
+                            Với hơn 60 năm xây dựng và phát triển, nhà trường luôn là địa chỉ giáo dục tin cậy của nhân
+                            dân huyện Lương Tài và các vùng lân cận.
+                        </p>
+                        <p>
+                            Trường hiện có đội ngũ giáo viên giàu kinh nghiệm, cơ sở vật chất khang trang, đáp ứng tốt
+                            nhu cầu dạy và học trong thời kỳ mới.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lich-su" class="section">
+                <h2>Lịch sử phát triển</h2>
+                <div class="history-item">
+                    <h3>Giai đoạn 1953-1975</h3>
+                    <p>
+                        Trường được thành lập với tên gọi ban đầu là Trường cấp 3 Lương Tài, là một trong những trường
+                        cấp 3 đầu tiên của tỉnh Hà Bắc (cũ).
+                    </p>
+                </div>
+                <div class="history-item">
+                    <h3>Giai đoạn 1975-2000</h3>
+                    <p>
+                        Trường phát triển mạnh về quy mô, chất lượng giáo dục, trở thành điểm sáng của ngành giáo dục
+                        tỉnh Hà Bắc.
+                    </p>
+                </div>
+                <div class="history-item">
+                    <h3>Từ 2000 đến nay</h3>
+                    <p>
+                        Sau khi tái lập tỉnh Bắc Ninh, trường tiếp tục khẳng định vị thế, nhiều năm liền đạt danh hiệu
+                        trường tiên tiến xuất sắc.
+                    </p>
+                </div>
+
+                <h3 style="margin-top: 1.5rem">Một số hình ảnh về trường</h3>
+                <div class="gallery">
+                    <img src="https://i.postimg.cc/L4q4ffLv/bong-chuyen.jpg" alt="Khuôn viên trường" />
+                    <img src="https://i.postimg.cc/SKTqYNKw/danh-trong.jpg" alt="Lễ khai giảng" />
+                    <img src="https://i.postimg.cc/xCB2gxM5/hoat-dong-ngoai-khoa.jpg" alt="Hoạt động ngoại khóa" />
+                </div>
+            </section>
+
+            <section id="hoat-dong" class="section">
+                <h2>Hoạt động nổi bật</h2>
+                <div class="activities">
+                    <div class="activity">
+                        <h3>Hoạt động giảng dạy</h3>
+                        <p>
+                            Nhà trường luôn đổi mới phương pháp giảng dạy, ứng dụng công nghệ thông tin, nâng cao chất
+                            lượng giáo dục toàn diện.
+                        </p>
+                    </div>
+                    <div class="activity">
+                        <h3>Hoạt động đoàn thể</h3>
+                        <p>
+                            Các phong trào văn nghệ, thể thao, tình nguyện được tổ chức thường xuyên, tạo môi trường
+                            giáo dục lành mạnh, sáng tạo.
+                        </p>
+                    </div>
+                    <div class="activity">
+                        <h3>Thành tích nổi bật</h3>
+                        <p>
+                            Hàng năm, trường có nhiều học sinh giỏi cấp tỉnh, cấp quốc gia, tỷ lệ đỗ tốt nghiệp và đại
+                            học luôn ở mức cao.
+                        </p>
+                    </div>
+                    <div class="activity">
+                        <h3>Hợp tác quốc tế</h3>
+                        <p>
+                            Trường đã thiết lập quan hệ hợp tác với một số trường học tại các nước trong khu vực để giao
+                            lưu văn hóa, giáo dục.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lien-he" class="section">
+                <h2>Thông tin liên hệ</h2>
+                <div class="contact-info">
+                    <p><strong>Địa chỉ:</strong> Thị Trấn Thứa, Huyện Lương Tài, Tỉnh Bắc Ninh</p>
+                    <p><strong>Số điện thoại:</strong> (0222) 3867 255</p>
+                    <p><strong>Email:</strong> c3luongtai@bacninh.edu.vn</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>© 2023 Trường THPT Lương Tài</p>
+        </footer>
+    </body>
+</html>
