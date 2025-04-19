@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>THPT Lương Tài - Bắc Ninh</title>
+        <style>
+            /* Reset CSS */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Arial", sans-serif;
+            }
+
+            body {
+                background-color: #f5f5f5;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            /* Header & Navigation */
+            header {
+                background: linear-gradient(135deg, #1e5799 0%, #207cca 100%);
+                color: white;
+                padding: 1rem 0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+            }
+
+            .nav-links li {
+                margin-left: 2rem;
+            }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+
+            .nav-links a:hover {
+                color: #f1c40f;
+            }
+
+            .hero {
+                background: url("https://i.postimg.cc/mgVWK27t/khai-giang-5.jpg") center/cover no-repeat;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                background-color: #3498db;
+                margin-bottom: 2rem;
+                position: relative;
+            }
+
+            .hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 1;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            /* Main Content */
+            section {
+                padding: 2rem 1rem;
+                background-color: white;
+                margin-bottom: 2rem;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            section h2 {
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid #f1c40f;
+            }
+            .intro {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .intro-text {
+                flex: 2;
+            }
+
+            .intro-image {
+                flex: 1;
+                min-height: 250px;
+                background: url("https://i.postimg.cc/SKTqYNKw/danh-trong.jpg") center/cover no-repeat;
+                background-color: #ddd;
+                border-radius: 5px;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                margin-top: 1.5rem;
+            }
+
+            .gallery-item {
+                height: 200px;
+                background-color: #ddd;
+                border-radius: 5px;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .activities {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .activity-card {
+                background-color: #f9f9f9;
+                padding: 1.5rem;
+                border-radius: 5px;
+                border-left: 4px solid #3498db;
+            }
+
+            .activity-card h3 {
+                color: #3498db;
+                margin-bottom: 1rem;
+            }
+
+            .contact-info {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .contact-icon {
+                font-size: 1.5rem;
+                color: #3498db;
+            }
+
+            /* Footer */
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 2rem 0;
+                margin-top: 2rem;
+            }
+
+            footer p {
+                margin-bottom: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">THPT Lương Tài</div>
+                    <ul class="nav-links">
+                        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="#lich-su">Lịch sử</a></li>
+                        <li><a href="#hoat-dong">Hoạt động</a></li>
+                        <li><a href="#lien-he">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Trường THPT Lương Tài</h1>
+                <p>Nơi ươm mầm tri thức - Chắp cánh ước mơ</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="gioi-thieu">
+                <h2>Giới thiệu về trường</h2>
+                <div class="intro">
+                    <div class="intro-text">
+                        <p>
+                            Trường THPT Lương Tài tọa lạc tại Thị Trấn Thứa, Huyện Lương Tài, Tỉnh Bắc Ninh, là một
+                            trong những trường THPT có bề dày truyền thống giáo dục của tỉnh.
+                        </p>
+                        <p>
+                            Với đội ngũ giáo viên giàu kinh nghiệm, cơ sở vật chất hiện đại, trường luôn là địa chỉ tin
+                            cậy cho các thế hệ học sinh trên địa bàn huyện Lương Tài và các vùng lân cận.
+                        </p>
+                    </div>
+                    <div class="intro-image"></div>
+                </div>
+            </section>
+
+            <section id="lich-su">
+                <h2>Lịch sử hình thành</h2>
+                <p>
+                    Trường THPT Lương Tài được thành lập năm 1953, trải qua hơn 60 năm xây dựng và phát triển, trường đã
+                    đào tạo hàng nghìn học sinh trưởng thành.
+                </p>
+                <p>
+                    Từ những ngày đầu thành lập với cơ sở vật chất còn nhiều thiếu thốn, đến nay trường đã có khuôn viên
+                    khang trang với đầy đủ các phòng học chức năng, thư viện, phòng thí nghiệm hiện đại.
+                </p>
+
+                <div class="gallery">
+                    <img
+                        src="https://i.postimg.cc/J4LwnBqs/thu-vien.jpg"
+                        width="100%"
+                        style="border-radius: 5%"
+                        alt=""
+                    />
+                    <img
+                        src="https://i.postimg.cc/j2yGcssq/lop-hoc-1.jpg"
+                        width="100%"
+                        style="border-radius: 5%"
+                        alt=""
+                    />
+                    <img
+                        src="https://i.postimg.cc/7LcdyChY/tu-van-tuyen-sinh.jpg"
+                        width="100%"
+                        style="border-radius: 5%"
+                        alt=""
+                    />
+                </div>
+            </section>
+
+            <section id="hoat-dong">
+                <h2>Hoạt động nổi bật</h2>
+                <div class="activities">
+                    <div class="activity-card">
+                        <h3>Hoạt động học tập</h3>
+                        <p>
+                            Trường thường xuyên tổ chức các cuộc thi học thuật, hội thảo khoa học, giao lưu với các
+                            trường bạn để nâng cao chất lượng dạy và học.
+                        </p>
+                    </div>
+                    <div class="activity-card">
+                        <h3>Hoạt động thể thao</h3>
+                        <p>
+                            Các giải bóng đá, bóng chuyền, cầu lông được tổ chức hàng năm, tạo sân chơi lành mạnh và
+                            phát hiện các tài năng thể thao.
+                        </p>
+                    </div>
+                    <div class="activity-card">
+                        <h3>Văn nghệ - tình nguyện</h3>
+                        <p>
+                            Đội văn nghệ của trường luôn đạt giải cao trong các hội thi cấp tỉnh. Các hoạt động tình
+                            nguyện vì cộng đồng được học sinh nhiệt tình hưởng ứng.
+                        </p>
+                    </div>
+                    <div class="activity-card">
+                        <h3>Thành tích nổi bật</h3>
+                        <p>
+                            Hàng năm, trường có tỷ lệ tốt nghiệp THPT trên 98%, nhiều học sinh đạt giải cao trong các kỳ
+                            thi học sinh giỏi cấp tỉnh và quốc gia.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lien-he">
+                <h2>Thông tin liên hệ</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Địa chỉ</h3>
+                            <p>Thị Trấn Thứa, Huyện Lương Tài, Tỉnh Bắc Ninh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Điện thoại</h3>
+                            <p>(0222) 3867 255</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>c3luongtai@bacninh.edu.vn</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>© 2025 Trường THPT Lương Tài - Bắc Ninh</p>
+            </div>
+        </footer>
+    </body>
+</html>
